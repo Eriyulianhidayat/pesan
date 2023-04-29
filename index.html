@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text tersembunyi</title>
+	<style type="text/css">
+		.texttersembunyi{
+			display: none;
+		}
+
+		.tampil{
+display:inline-table;
+		}
+
+		a{
+			text-decoration: none;
+		}
+		a:hover{
+			color: skyblue;
+			font-size: 20px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body style="background-color: silver">
+<button id="tmbl">Tampilkan Pesan</button>
+<br><br>
+
+
+<table class="texttersembunyi" id="texttersembunyi" cellpadding="10" cellspacing="0" border="1px" style="background-color: red; color: white">
+	<tr>
+		<td>Nama </td>
+		<td>:</td>
+		<td>Yoha Elisa Berty</td>
+	</tr>
+		<tr>
+		<td>Umur </td>
+		<td>:</td>
+		<td>19 Tahun</td>
+	</tr>
+		<tr>
+		<td>Alamat </td>
+		<td>:</td>
+		<td>Riau</td>
+	</tr>
+		<tr>
+		<td>Pekerjaan </td>
+		<td>:</td>
+		<td>Mahasiswi</td>
+	</tr>
+	<tr>
+		<td>Status </td>
+		<td>:</td>
+		<td>-</td>
+	</tr>
+		<tr>
+		<td>MAU JADI TEMAN KU.?</td>
+		<td>:</td>
+		<td><a href="https://wa.me/+6285768579645? text= IYA">IYA</a> ATAU <a href="https://wa.me/+6285768579645? text= TIDAK">TIDAK</a></td>
+	</tr>
+</table>
+<script type="text/javascript">
+	var text= document.getElementById('texttersembunyi');
+	tmbl.addEventListener('click',function() {
+		text.classList.toggle("tampil");
+
+	
+
+	}
+
+	);
+</script>
+</body>
+</html>
